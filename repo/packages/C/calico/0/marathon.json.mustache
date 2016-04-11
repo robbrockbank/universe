@@ -1,0 +1,37 @@
+{
+  "id": "calico",
+  "container": {
+    "type": "DOCKER",
+    "network": "HOST",
+    "docker": {
+      "image": "{{resource.assets.container.docker.calico-dcos}}",
+      "network": "HOST",
+      "forcePullImage": true
+    }
+  },
+  "env": {
+    "CALICO_CALICOCTL_URL": "{{calico.calicoctl-url}}",
+    "CALICO_NODE_IMG": "{{calico.calico-node-img}}",
+    "CALICO_LIBNETWORK_IMG": "{{calico.calico-libnetwork-img}}",
+    "CALICO_ALLOW_RESTART_AGENT": "{{calico.allow-restart-agent}}",
+    "CALICO_ALLOW_RESTART_DOCKER": "{{calico.allow-restart-docker}}",
+    "CALICO_MAX_CONCURRENT_RESTARTS": "{{calico.max-concurrent-restarts}}",
+    "CALICO_ZK": "{{calico.zk}}",
+    "CALICO_CPU_LIMIT_INSTALL": "{{calico.cpu-limit-install}}",
+    "CALICO_MEM_LIMIT_INSTALL": "{{calico.mem-limit-install}}",
+    "CALICO_CPU_LIMIT_ETCD_PROXY": "{{calico.cpu-limit-etcd-proxy}}",
+    "CALICO_MEM_LIMIT_ETCD_PROXY": "{{calico.mem-limit-etcd-proxy}}",
+    "CALICO_CPU_LIMIT_NODE": "{{calico.cpu-limit-node}}",
+    "CALICO_MEM_LIMIT_NODE": "{{calico.mem-limit-node}}",
+    "CALICO_CPU_LIMIT_LIBNETWORK": "{{calico.cpu-limit-libnetwork}}",
+    "CALICO_MEM_LIMIT_LIBNETWORK": "{{calico.mem-limit-libnetwork}}",
+    "CALICO_INSTALLER_URL": "{{resource.assets.uris.calico-installer}}",
+    "CALICO_MESOS_PLUGIN": "{{resource.assets.uris.calico-mesos-plugin}}",
+    "ETCD_SRV": "{{etcd.etcd-discovery-url}}",
+    "ETCD_BINARY_URL": "{{resource.assets.uris.etcd}}",
+    "MESOS_MASTER": "{{mesos.master}}"
+  },
+  "labels": {
+    "DCOS_PACKAGE_FRAMEWORK_NAME": "{{calico.framework-name}}"
+  }
+}

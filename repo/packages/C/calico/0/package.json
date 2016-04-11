@@ -1,0 +1,18 @@
+{
+  "packagingVersion": "2.0",
+  "name": "calico",
+  "version": "0.2.0",
+  "tags": ["calico", "networking", "ip-per-container", "ip-per-task", "policy"],
+  "description": "Calico networking for Mesos, providing IP-per-Task and advanced policy",
+  "scm": "https://github.com/projectcalico/calico-containers.git",
+  "website": "https://projectcalico.org",
+  "postInstallNotes": "Run through the Calico with Mesos guides available at https://github.com/projectcalico/calico-containers.git",
+  "maintainer": "dan@projectcalico.org",
+  "licenses": [
+    {
+      "name": "Apache License Version 2.0",
+      "url": "https://raw.githubusercontent.com/projectcalico/calico-containers/master/LICENSE"
+    }
+  ],
+  "framework": true
+}

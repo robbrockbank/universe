@@ -18,6 +18,21 @@
       }
     },
     {
+      "currentVersion":"0.2.0",
+      "description":"IP-Per-Task networking for Mesos",
+      "framework":false,
+      "name":"calico",
+      "promoted":false,
+      "tags":[
+        "calico",
+        "networking",
+        "ip-per-container"
+      ],
+      "versions":{
+        "0.2.0":"0"
+      }
+    },
+    {
       "currentVersion":"0.2.0-2",
       "description":"Apache Cassandra running on Apache Mesos",
       "framework":true,
