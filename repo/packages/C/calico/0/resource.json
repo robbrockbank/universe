@@ -7,7 +7,7 @@
   "assets": {
     "container": {
       "docker": {
-        "calico-dcos": "djosborne/calico-dcos:latest"
+        "calico-dcos": "calico/calico-dcos:latest"
       }
     },
     "uris": {
