@@ -1,7 +1,7 @@
 {
   "packagingVersion": "2.0",
   "name": "calico",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "tags": ["calico", "networking", "ip-per-container", "ip-per-task", "policy"],
   "description": "Calico networking for Mesos, providing IP-per-Task and advanced policy",
   "scm": "https://github.com/projectcalico/calico-containers.git",
