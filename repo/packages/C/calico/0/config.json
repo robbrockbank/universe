@@ -37,7 +37,7 @@
           "default": "zk://master.mesos:2181/calico",
           "description": "The URL of Zookeeper to be used to persist Calico framework data. The format is a comma-delimited list of hosts like zk://host1:port,host2:port/calico, including the trailing path.",
           "type": "string"
-        }
+        },
         "cpu-limit-install": {
           "default": 0.02,
           "description": "The CPU shares for each install task instance.",
@@ -85,7 +85,7 @@
           "description": "Memory limit (MB) for each Calico Docker Network driver instance.",
           "minimum": 32,
           "type": "integer"
-        },
+        }
       },
       "required": [
         "calicoctl-url",
@@ -93,11 +93,14 @@
         "calico-libnetwork",
         "allow-restart-agent",
         "allow-restart-docker",
+        "max-concurrent-restarts",
         "zk",
         "cpu-limit-install",
         "mem-limit-install",
+        "cpu-limit-etcd-proxy",
+        "mem-limit-etcd-proxy",
         "cpu-limit-node",
-        "mem-limit-node"
+        "mem-limit-node",
         "cpu-limit-libnetwork",
         "mem-limit-libnetwork"
       ],
@@ -109,7 +112,7 @@
         "etcd-discovery-url": {
           "default": "etcd.mesos",
           "description": "The etcd service discovery URL used to determine the addresses of the full etcd cluster.",
-          "type": "string",
+          "type": "string"
         }
       },
       "required": [
