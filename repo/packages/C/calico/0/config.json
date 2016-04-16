@@ -3,6 +3,11 @@
     "calico": {
       "description": "Calico specific configuration properties.",
       "properties": {
+        "framework-name": {
+          "type": "string",
+          "description": "The name of the framework. Until this is configurable, please do not change this from its default value.",
+          "default": "swarm"
+        },
         "calicoctl-url": {
           "type": "string",
           "description": "The download URL for the calicoctl command line tool.",
@@ -29,7 +34,7 @@
           "default": true
         },
         "max-concurrent-restarts": {
-          "type": "int",
+          "type": "integer",
           "description": "The maximum number of Agent or Docker restarts that are allowed to be scheduled concurrently by the Calico framework.",
           "default": 1
         },
@@ -89,8 +94,8 @@
       },
       "required": [
         "calicoctl-url",
-        "calico-node",
-        "calico-libnetwork",
+        "calico-node-img",
+        "calico-libnetwork-img",
         "allow-restart-agent",
         "allow-restart-docker",
         "max-concurrent-restarts",

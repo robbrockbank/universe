@@ -19,14 +19,16 @@
     },
     {
       "currentVersion":"0.2.0",
-      "description":"IP-Per-Task networking for Mesos",
-      "framework":false,
+      "description":"Calico networking for Mesos, providing IP-per-Task and advanced policy",
+      "framework":true,
       "name":"calico",
-      "promoted":false,
+      "selected":false,
       "tags":[
         "calico",
         "networking",
-        "ip-per-container"
+        "ip-per-container",
+        "ip-per-task",
+        "policy"
       ],
       "versions":{
         "0.2.0":"0"
