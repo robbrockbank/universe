@@ -14,5 +14,6 @@
       "etcd": "https://github.com/coreos/etcd/releases/download/v2.3.1/etcd-v2.3.1-linux-amd64.tar.gz",
       "calico-installer": "http://172.25.20.11/installer",
       "calico-mesos-plugin": "https://github.com/projectcalico/calico-mesos/releases/download/v0.1.5/calico_mesos"
+    }
   }
 }
