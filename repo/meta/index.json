@@ -18,7 +18,7 @@
       }
     },
     {
-      "currentVersion":"0.2.0",
+      "currentVersion":"0.1.0",
       "description":"Calico networking for Mesos, providing IP-per-Task and advanced policy",
       "framework":true,
       "name":"calico",
@@ -31,7 +31,7 @@
         "policy"
       ],
       "versions":{
-        "0.2.0":"0"
+        "0.1.0":"0"
       }
     },
     {
