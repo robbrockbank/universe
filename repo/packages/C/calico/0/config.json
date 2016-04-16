@@ -44,13 +44,13 @@
           "type": "string"
         },
         "cpu-limit-install": {
-          "default": 0.02,
+          "default": 0.2,
           "description": "The CPU shares for each install task instance.",
           "minimum": 0.01,
           "type": "number"
         },
         "mem-limit-install": {
-          "default": 2048,
+          "default": 512,
           "description": "Memory limit (MB) for each install task instance.",
           "minimum": 32,
           "type": "integer"
@@ -62,19 +62,19 @@
           "type": "number"
         },
         "mem-limit-etcd-proxy": {
-          "default": 2048,
+          "default": 128,
           "description": "Memory limit (MB) for each etcd proxy instance.",
           "minimum": 32,
           "type": "integer"
         },
         "cpu-limit-node": {
-          "default": 0.4,
+          "default": 0.2,
           "description": "The CPU shares for each Calico node instance.",
           "minimum": 0.01,
           "type": "number"
         },
         "mem-limit-node": {
-          "default": 4096,
+          "default": 256,
           "description": "Memory limit (MB) for each Calico node instance.",
           "minimum": 32,
           "type": "integer"
@@ -86,7 +86,7 @@
           "type": "number"
         },
         "mem-limit-libnetwork": {
-          "default": 2048,
+          "default": 256,
           "description": "Memory limit (MB) for each Calico Docker Network driver instance.",
           "minimum": 32,
           "type": "integer"
