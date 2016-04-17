@@ -35,4 +35,23 @@
   "labels": {
     "DCOS_PACKAGE_FRAMEWORK_NAME": "{{calico.framework-name}}"
   }
+  "requirePorts":true,
+  {{#marathon-lb.template-url}}
+  "uris": [ "{{marathon-lb.template-url}}" ],
+  {{/marathon-lb.template-url}}
+  "env": {
+    "HAPROXY_SSL_CERT": "{{marathon-lb.ssl-cert}}",
+    "HAPROXY_SYSCTL_PARAMS": "{{marathon-lb.sysctl-params}}"
+  },
+  "ports": [
+    0
+  ]
+  "healthChecks": [{
+    "protocol": "HTTP",
+    "path": "/health",
+    "portIndex": 0,
+    "gracePeriodSeconds": 60,
+    "intervalSeconds": 30,
+    "maxConsecutiveFailures": 0
+  }],
 }
