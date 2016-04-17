@@ -13,8 +13,8 @@
     "CALICO_CALICOCTL_URL": "{{calico.calicoctl-url}}",
     "CALICO_NODE_IMG": "{{calico.calico-node-img}}",
     "CALICO_LIBNETWORK_IMG": "{{calico.calico-libnetwork-img}}",
-    "CALICO_ALLOW_AGENT_UPDATE": "{{calico.allow-agent-update}}",
-    "CALICO_ALLOW_DOCKER_UPDATE": "{{calico.allow-docker-update}}",
+    {{#calico.allow-agent-update}}"CALICO_ALLOW_AGENT_UPDATE": "true",{{/calico.allow-agent-update}}
+    {{#calico.allow-docker-update}}"CALICO_ALLOW_DOCKER_UPDATE": "true",{{/calico.allow-docker-update}}
     "CALICO_MAX_CONCURRENT_RESTARTS": "{{calico.max-concurrent-restarts}}",
     "CALICO_ZK": "{{calico.zk}}",
     "CALICO_CPU_LIMIT_INSTALL": "{{calico.cpu-limit-install}}",
