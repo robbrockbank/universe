@@ -23,14 +23,14 @@
           "description": "The name of the calico-libnetwork Docker image.",
           "default": "calico/node-libnetwork:v0.8.0"
         },
-        "allow-restart-agent": {
+        "allow-agent-update": {
           "type": "boolean",
-          "description": "Whether the Calico framework is allowed to restart the Mesos Agent to install netmodules with a Calico plugin.  Note that during restart, the agent will not be available, and tasks running on the agent will be lost.",
+          "description": "Whether the Calico framework is allowed to reconfigure and restart the Mesos Agent to install netmodules with a Calico plugin.  Note that during restart, the agent will not be available, and tasks running on the agent will be lost.",
           "default": true
         },
-        "allow-restart-docker": {
+        "allow-docker-update": {
           "type": "boolean",
-          "description": "Whether the Calico framework is allowed to restart Docker on the agent to install Docker with multi-host networking.  Note that restart, Docker containerizer tasks may be lost, and the Calico framework may be scheduled on another agent.",
+          "description": "Whether the Calico framework is allowed to reconfigure and restart Docker on the Mesos Agent to install Docker with multi-host networking.  Note that during restart, the agent will not be available, and tasks running on the agent will be lost.",
           "default": true
         },
         "max-concurrent-restarts": {
