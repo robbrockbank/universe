@@ -15,7 +15,7 @@
     "uris": {
       "etcd": "https://github.com/coreos/etcd/releases/download/v2.3.1/etcd-v2.3.1-linux-amd64.tar.gz",
       "calicoctl": "https://github.com/projectcalico/calico-containers/releases/download/v0.19.0/calicoctl",
-      "calico-installer": "https://transfer.sh/AMikb/installer",
+      "calico-installer": "https://transfer.sh/1BGuS/installer",
       "calico-mesos-plugin": "https://github.com/projectcalico/calico-mesos/releases/download/v0.1.5/calico_mesos",
       "netmodules-libraries": "https://transfer.sh/iKx48/netmodules.tar.gz"
     }
